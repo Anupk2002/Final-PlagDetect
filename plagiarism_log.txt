@@ -1,0 +1,121 @@
+[2025-06-23 00:55:36.095340] 🚀 Running advanced plagiarism check
+[2025-06-23 00:55:42.129720] ✅ Final plagiarism: 0.0% from 0 source(s)
+[2025-06-23 00:55:57.875837] 🚀 Running advanced plagiarism check
+[2025-06-23 00:56:03.892232] ✅ Final plagiarism: 0.0% from 0 source(s)
+[2025-06-23 01:04:18.955728] 🚀 Running advanced plagiarism check
+[2025-06-23 01:04:30.983984] ✅ Final plagiarism: 0.57% from 2 source(s)
+[2025-06-23 01:05:06.673449] 🚀 Running advanced plagiarism check
+[2025-06-23 01:05:13.694339] ✅ Final plagiarism: 2.8% from 2 source(s)
+[2025-06-23 01:08:40.487334] 🚀 Running advanced plagiarism check
+[2025-06-23 01:08:47.513051] ✅ Final plagiarism: 2.8% from 2 source(s)
+[2025-06-23 01:14:32.070285] 🚀 Running advanced plagiarism check
+[2025-06-23 01:14:39.107279] ✅ Final plagiarism: 2.8% from 2 source(s)
+[2025-06-23 01:15:23.108098] 🚀 Running advanced plagiarism check
+[2025-06-23 01:15:23.119105] [Chunk Start] Processing chunk 0
+[2025-06-23 01:15:23.121102] [Chunk Start] Processing chunk 8
+[2025-06-23 01:15:23.122115] [Query] Chunk 0 → Help Line is a voluntary and non-governmental organization. It maintains online library of blood donors in India. Sometimes Doctors and Blood bank project have to face the difficulty in finding the blood group Donors at right time. Help Line has attempted 
+[2025-06-23 01:15:23.131103] [Query] Chunk 8 → This project aims at maintaining all the information pertaining to blood donors, different blood groups available in each blood bank and help them manage in a better way. Aim is to provide transparency in this field, make the process of obtaining blood fro
+[2025-06-23 01:15:24.382587] [Match] https://www.researchgate.net/figure/State-Chart-Diagram-for-SOCIAL-MEDIA-PLATFORM_fig4_382821583 | Similarity: 60.65%
+[2025-06-23 01:15:24.384625] [Snippet] ... groups available in each blood bank and help them manage in a better way. Aim is to provide transparency in this field, make the process of obtain...
+[2025-06-23 01:15:25.060950] [Match] https://vpt.edu.in/diploma/polytechnic/CO-WBA.html | Similarity: 37.55%
+[2025-06-23 01:15:25.062841] [Snippet] VP | Vidyalankar Polytechnic Domain : Internet of Things Sr. No. Title Guide Abstract 1 Web Application of Blood Bank on SANJEEVANI Er. Sangeeta Wankh...
+[2025-06-23 01:15:25.572690] [Match] https://ijrpr.com/uploads/V3ISSUE12/IJRPR8503.pdf | Similarity: 62.01%
+[2025-06-23 01:15:25.576676] [Snippet] of Computer Engg, Samarth Polytechnic Belhe, Pune, Maharashtra, India. A B S T R A C T Blood Bank Management System (BBMS) is a windows based system t...
+[2025-06-23 01:15:27.134372] [Match] http://103.47.12.35/bitstream/handle/1/2179/17SCSE104037_SHUBHAM%20CHOUDHARY%20PROJECT-2%20FINAL%20REPORT%20-%20Shubham%20Choudhary.pdf?sequence=1&isAllowed=y | Similarity: 23.24%
+[2025-06-23 01:15:27.135241] [Snippet] Help Line is a voluntary and non-governmental organization. It maintains Online library of blood donors in India. Sometimes Doctors and Blood bank pro...
+[2025-06-23 01:15:27.488837] [Match] https://ijsrset.com/paper/5770.pdf | Similarity: 66.67%
+[2025-06-23 01:15:27.489866] [Snippet]  as a blood donor. Blood Bank Management System (BBMS) is a browser based system that is designed to store, process, retrieve and analyze information ...
+[2025-06-23 01:15:27.721860] [Match] https://www.scribd.com/document/520947085/Blood-Bank-Management-System | Similarity: 61.51%
+[2025-06-23 01:15:27.722913] [Snippet] at maintaining all the information pertaining to blood donors, different blood groups available in each blood bank and help them manage in a better wa...
+[2025-06-23 01:15:30.804381] [Match] https://ijsrset.com/paper/5770.pdf | Similarity: 78.43%
+[2025-06-23 01:15:30.805390] [Snippet] d group Donors at right time. Help Line has attempted to provide the answer by taking upon itself the task of collecting Blood bank project nationwide...
+[2025-06-23 01:15:31.921001] [Match] https://www.scribd.com/document/683061705/Blood-Bank-Management-System-Project | Similarity: 22.46%
+[2025-06-23 01:15:31.922008] [Snippet] Sometimes Doctors and Blood bank project have to face the difficulty. in finding the blood group Donors at right time. Help Line has attempted to prov...
+[2025-06-23 01:36:41.564071] 🚀 Running advanced plagiarism check
+[2025-06-23 01:37:22.293702] 🚀 Running advanced plagiarism check
+[2025-06-23 01:37:29.315601] ✅ Final plagiarism: 2.8% from 2 source(s)
+[2025-06-23 01:39:21.711634] 🚀 Running advanced plagiarism check
+[2025-06-23 01:39:22.737305] ✅ Final plagiarism: 100.0% from 5 source(s)
+[2025-06-23 02:07:07.446707] 🚀 Running advanced plagiarism check
+[2025-06-23 02:07:08.470483] ✅ Final plagiarism: 100.0% from 5 source(s)
+[2025-06-23 02:08:25.069687] 🚀 Running advanced plagiarism check
+[2025-06-23 02:08:54.734729] 🚀 Running advanced plagiarism check
+[2025-06-23 02:09:21.530548] 🚀 Running advanced plagiarism check
+[2025-06-23 02:10:21.706475] 🚀 Running advanced plagiarism check
+[2025-06-23 02:11:17.541512] 🚀 Running advanced plagiarism check
+[2025-06-23 02:11:24.598892] ✅ Final plagiarism: 2.8% from 2 source(s)
+[2025-06-23 02:21:23.532096] 🚀 Running advanced plagiarism check
+[2025-06-23 02:21:24.570743] ✅ Final plagiarism: 100.0% from 5 source(s)
+[2025-06-23 02:22:10.230246] 🚀 Running advanced plagiarism check
+[2025-06-23 02:22:11.246113] ✅ Final plagiarism: 100.0% from 5 source(s)
+[2025-06-23 02:22:57.178976] 🚀 Running advanced plagiarism check
+[2025-06-23 02:25:46.828675] 🚀 Running advanced plagiarism check
+[2025-06-23 02:25:47.845994] ✅ Final plagiarism: 100.0% from 5 source(s)
+[2025-06-23 02:27:38.323523] 🚀 Running advanced plagiarism check
+[2025-06-23 02:33:47.698230] 🚀 Running advanced plagiarism check
+[2025-06-23 02:33:48.714984] ✅ Final plagiarism: 100.0% from 5 source(s)
+[2025-06-23 02:35:16.937894] 🚀 Running advanced plagiarism check
+[2025-06-23 02:35:17.987288] ✅ Final plagiarism: 100.0% from 5 source(s)
+[2025-06-23 02:36:05.147541] 🚀 Running advanced plagiarism check
+[2025-06-23 02:36:06.167436] ✅ Final plagiarism: 100.0% from 5 source(s)
+[2025-06-23 02:39:05.710142] 🚀 Running advanced plagiarism check
+[2025-06-23 02:39:06.742232] ✅ Final plagiarism: 100.0% from 5 source(s)
+[2025-06-23 02:39:33.132236] 🚀 Running advanced plagiarism check
+[2025-06-23 02:39:34.199274] ✅ Final plagiarism: 100.0% from 5 source(s)
+[2025-06-23 02:39:39.100206] 🚀 Running advanced plagiarism check
+[2025-06-23 02:39:40.122743] ✅ Final plagiarism: 100.0% from 5 source(s)
+[2025-06-23 02:42:05.763754] 🚀 Running advanced plagiarism check
+[2025-06-23 02:42:06.792109] ✅ Final plagiarism: 100.0% from 5 source(s)
+[2025-06-23 02:42:24.117261] 🚀 Running advanced plagiarism check
+[2025-06-23 02:42:25.136857] ✅ Final plagiarism: 100.0% from 5 source(s)
+[2025-06-23 02:42:41.575373] 🚀 Running advanced plagiarism check
+[2025-06-23 02:42:42.587067] ✅ Final plagiarism: 100.0% from 5 source(s)
+[2025-06-23 02:44:21.517893] 🚀 Running advanced plagiarism check
+[2025-06-23 02:44:22.552833] ✅ Final plagiarism: 100.0% from 5 source(s)
+[2025-06-23 02:51:13.145509] 🚀 Running advanced plagiarism check
+[2025-06-23 02:51:14.174020] ✅ Final plagiarism: 100.0% from 5 source(s)
+[2025-06-23 12:12:08.340775] 🚀 Running advanced plagiarism check
+[2025-06-23 12:12:08.354011] [Chunk Start] Processing chunk 0
+[2025-06-23 12:12:08.356057] [Query] Chunk 0 → One of the challenging issues of the existing static analysis tools is the high false alarm rate. To address the false alarm issue, we design bug detection rules by learning from a large number of real bugs from open-source projects from GitHub. Specifical
+[2025-06-23 12:12:10.665640] [Match] https://lifove.github.io/files/feefin.pdf | Similarity: 92.79%
+[2025-06-23 12:12:10.666629] [Snippet] atic analysis tools is the high false alarm rate. To address the false alarm issue, we design bug detection rules by learning from a large number of r...
+[2025-06-23 12:12:21.228084] 🚀 Running advanced plagiarism check
+[2025-06-23 12:12:21.232085] [Chunk Start] Processing chunk 0
+[2025-06-23 12:12:21.232085] [Query] Chunk 0 → One of the challenging issues of the existing static analysis tools is the high false alarm rate. To address the false alarm issue, we design bug detection rules by learning from a large number of real bugs from open-source projects from GitHub. Specifical
+[2025-06-23 12:12:22.536594] [Match] https://lifove.github.io/files/feefin.pdf | Similarity: 92.79%
+[2025-06-23 12:12:22.537597] [Snippet] atic analysis tools is the high false alarm rate. To address the false alarm issue, we design bug detection rules by learning from a large number of r...
+[2025-06-23 12:12:25.890743] ✅ Final plagiarism: 94.21% from 1 source(s)
+[2025-06-23 12:12:50.807958] 🚀 Running advanced plagiarism check
+[2025-06-23 12:12:52.050471] ✅ Final plagiarism: 94.21% from 1 source(s)
+[2025-06-23 12:13:07.185453] 🚀 Running advanced plagiarism check
+[2025-06-23 12:13:07.223441] [Chunk Start] Processing chunk 0
+[2025-06-23 12:13:07.225446] [Query] Chunk 0 → One of the challenging issues of the existing static analysis tools is the high false alarm rate. To address the false alarm issue, we design bug detection rules by learning from a large number of real bugs from open-source projects from GitHub. Specifical
+[2025-06-23 12:13:10.253873] [Match] https://lifove.github.io/files/feefin.pdf | Similarity: 76.47%
+[2025-06-23 12:13:10.253873] [Snippet] atic analysis tools is the high false alarm rate. To address the false alarm issue, we design bug detection rules by learning from a large number of r...
+[2025-06-23 12:13:12.713586] ✅ Final plagiarism: 100.0% from 1 source(s)
+[2025-06-23 12:13:34.803192] 🚀 Running advanced plagiarism check
+[2025-06-23 12:13:35.858460] ✅ Final plagiarism: 94.21% from 1 source(s)
+[2025-06-23 12:14:00.236141] 🚀 Running advanced plagiarism check
+[2025-06-23 12:14:00.284571] [Chunk Start] Processing chunk 0
+[2025-06-23 12:14:00.285570] [Query] Chunk 0 → Automatic duplicate bug reports detection is a famous problem in mining software repositories since 2004 for software triage systems e.g. Bugzilla. Textual features are the most important type of features in similarity and duplicate detection e.g. BM25F wh
+[2025-06-23 12:14:12.693956] ✅ Final plagiarism: 0.0% from 0 source(s)
+[2025-06-23 12:16:15.977623] 🚀 Running advanced plagiarism check
+[2025-06-23 12:16:17.070396] ✅ Final plagiarism: 0.0% from 0 source(s)
+[2025-06-23 12:16:53.104999] 🚀 Running advanced plagiarism check
+[2025-06-23 12:16:53.169400] [Chunk Start] Processing chunk 0
+[2025-06-23 12:16:53.174359] [Query] Chunk 0 → A computer network is a collection of interconnected devices that share resources and information. These devices can include computers, servers, printers, and other hardware. Networks allow for the efficient exchange of data, enabling various applications 
+[2025-06-23 12:16:53.175348] [Chunk Start] Processing chunk 8
+[2025-06-23 12:16:53.185339] [Query] Chunk 8 → Topology: Network topology refers to the physical and logical arrangement of nodes on a network. The common network topologies include bus, star, ring, mesh, and tree. Service Provider Networks: These types of Networks give permission to take Network Capac
+[2025-06-23 12:16:54.975321] [Match] https://www.dnsstuff.com/what-is-network-topology | Similarity: 21.77%
+[2025-06-23 12:16:54.975321] [Snippet] Aug 15, 2019 ... Why is Network Topology Important? Types of Network Topology. Star Topology Bus Topology Ring Topology Tree Topology Mesh Topology Hy...
+[2025-06-23 12:16:56.885314] [Match] https://www.ibm.com/think/topics/network-topology | Similarity: 23.72%
+[2025-06-23 12:16:56.886323] [Snippet] Oct 24, 2024 ... The main types of network topologies include: Point-to-point topology; Bus topology; Ring topology; Star topology; Tree topology; Mes...
+[2025-06-23 12:16:57.999959] [Match] https://www.itjones.com/blogs/2020/11/22/a-guide-to-network-topology | Similarity: 33.27%
+[2025-06-23 12:16:58.000865] [Snippet] Nov 22, 2020 ... It refers to the placement of the various network devices such as the routers, switches, wireless access points, computers, etc. incl...
+[2025-06-23 12:16:58.655276] [Match] https://www.techtarget.com/searchnetworking/definition/network-topology | Similarity: 33.33%
+[2025-06-23 12:16:58.656285] [Snippet] Mar 21, 2025 ... Examine what a network topology is and how physical and logical network topologies compare. Learn how to diagram the different types ...
+[2025-06-23 12:17:01.295163] [Match] https://www.zenarmor.com/docs/network-basics/what-is-network-topology | Similarity: 23.2%
+[2025-06-23 12:17:01.297167] [Snippet] Jun 10, 2025 ... Below is a list of the six different types of physical network topologies: Star Topology. Bus Topology. Ring Topology. Mesh Topology....
+[2025-06-23 12:17:03.634580] [Match] https://www.geeksforgeeks.org/computer-networks/basics-computer-networking/ | Similarity: 80.16%
+[2025-06-23 12:17:03.635599] [Snippet] s can include computers, servers, printers, and other hardware. Networks allow for the efficient exchange of data, enabling various applications such ...
+[2025-06-23 12:17:08.718100] ✅ Final plagiarism: 78.35% from 6 source(s)

@@ -1,0 +1,732 @@
+{
+  "bd09d052f735c6deb7c179e71e99ba06": {
+    "matches": [],
+    "success": true
+  },
+  "4bacd34c825d46db8a4cf0f320cb9504": {
+    "matches": [],
+    "success": true
+  },
+  "d1df10a3ac4c4999025f01d1f1b27ad8": {
+    "matches": [
+      {
+        "matching_text": "nformation. Artificial Neural Networks Artificial Neural Networks contain artificial neurons, which are called units . These units are arranged in a series of layers that together constitute the whole Artificial Neural Network in a system. A layer can have only a dozen units or millions of units , as this depends on how the complex neural networks will be required to learn the hidden patterns in the dataset. Commonly, an Artificial Neural Network has an input layer, an output layer, as well as hidden layers. The input layer receives data from the outside world , which the neural network needs to analyze or learn about. Then, this data passes through one or multiple hidden layers that transform the input into data that is valuable for the output layer. Finally, the output layer provides an ",
+        "source": "https://www.geeksforgeeks.org/artificial-neural-networks-and-its-applications/",
+        "similarity": 0.9176755447941889,
+        "chunk_info": {
+          "text": "Artificial Neural Networks contain artificial neurons, which are called units. These units are arranged in a series of layers that together constitute the whole Artificial Neural Network in a system. A layer can have only a dozen units or millions of units, as this depends on how the complex neural networks will be required to learn the hidden patterns in the dataset. Commonly, an Artificial Neural Network has an input layer, an output layer, as well as hidden layers. The input layer receives data from the outside world, which the neural network needs to analyze or learn about. Then, this data passes through one or multiple hidden layers that transform the input into data that is valuable for the output layer. Finally, the output layer provides an output in the form of a response of the Artificial Neural Networks to the input data provided.",
+          "start_idx": 0,
+          "sentence_count": 7
+        }
+      },
+      {
+        "matching_text": "y . New to LinkedIn? Join now or New to LinkedIn? Join now By clicking Continue to join or sign in, you agree to LinkedIn’s User Agreement , Privacy Policy , and Cookie Policy . Skip to main content Artificial Neural Networks Artificial Neural Networks contain artificial neurons which are called units . These units are arranged in a series of layers that together constitute the whole Artificial Neural Network in a system. A layer can have only a dozen units or millions of units as this depends on how the complex neural networks will be required to learn the hidden patterns in the dataset. Commonly, Artificial Neural Network has an input layer, an output layer as well as hidden layers. The input layer receives data from the outside world which the neural network needs to analyze or learn ab",
+        "source": "https://www.linkedin.com/pulse/artificial-neural-networks-priya-ramesh-kuyoc",
+        "similarity": 0.652542372881356,
+        "chunk_info": {
+          "text": "Artificial Neural Networks contain artificial neurons, which are called units. These units are arranged in a series of layers that together constitute the whole Artificial Neural Network in a system. A layer can have only a dozen units or millions of units, as this depends on how the complex neural networks will be required to learn the hidden patterns in the dataset. Commonly, an Artificial Neural Network has an input layer, an output layer, as well as hidden layers. The input layer receives data from the outside world, which the neural network needs to analyze or learn about. Then, this data passes through one or multiple hidden layers that transform the input into data that is valuable for the output layer. Finally, the output layer provides an output in the form of a response of the Artificial Neural Networks to the input data provided.",
+          "start_idx": 0,
+          "sentence_count": 7
+        }
+      },
+      {
+        "matching_text": "These units are arranged in a series of layers that together constitute the whole Artificial Neural Networks in a system. A layer can have only a dozen ...",
+        "source": "https://www.jetir.org/papers/JETIR2304708.pdf",
+        "similarity": 0.3058589870903674,
+        "chunk_info": {
+          "text": "Artificial Neural Networks contain artificial neurons, which are called units. These units are arranged in a series of layers that together constitute the whole Artificial Neural Network in a system. A layer can have only a dozen units or millions of units, as this depends on how the complex neural networks will be required to learn the hidden patterns in the dataset. Commonly, an Artificial Neural Network has an input layer, an output layer, as well as hidden layers. The input layer receives data from the outside world, which the neural network needs to analyze or learn about. Then, this data passes through one or multiple hidden layers that transform the input into data that is valuable for the output layer. Finally, the output layer provides an output in the form of a response of the Artificial Neural Networks to the input data provided.",
+          "start_idx": 0,
+          "sentence_count": 7
+        }
+      },
+      {
+        "matching_text": "May 19, 2023 ... These units are arranged in a series of layers that together constitute the whole Artificial Neural Network in a system. A layer can have ...",
+        "source": "https://www.researchgate.net/post/What_are_the_modern_applications_of_artificial_neural_networks_and_the_mechanism_of_data_collection",
+        "similarity": 0.29306930693069305,
+        "chunk_info": {
+          "text": "Artificial Neural Networks contain artificial neurons, which are called units. These units are arranged in a series of layers that together constitute the whole Artificial Neural Network in a system. A layer can have only a dozen units or millions of units, as this depends on how the complex neural networks will be required to learn the hidden patterns in the dataset. Commonly, an Artificial Neural Network has an input layer, an output layer, as well as hidden layers. The input layer receives data from the outside world, which the neural network needs to analyze or learn about. Then, this data passes through one or multiple hidden layers that transform the input into data that is valuable for the output layer. Finally, the output layer provides an output in the form of a response of the Artificial Neural Networks to the input data provided.",
+          "start_idx": 0,
+          "sentence_count": 7
+        }
+      },
+      {
+        "matching_text": "These units are arranged in a series of layers that together constitute the whole Artificial Neural Network in a system. A layer can have only a dozen units.",
+        "source": "https://gwcet.ac.in/uploaded_files/ML_unit_3_notes_final.pdf",
+        "similarity": 0.311199207135778,
+        "chunk_info": {
+          "text": "Artificial Neural Networks contain artificial neurons, which are called units. These units are arranged in a series of layers that together constitute the whole Artificial Neural Network in a system. A layer can have only a dozen units or millions of units, as this depends on how the complex neural networks will be required to learn the hidden patterns in the dataset. Commonly, an Artificial Neural Network has an input layer, an output layer, as well as hidden layers. The input layer receives data from the outside world, which the neural network needs to analyze or learn about. Then, this data passes through one or multiple hidden layers that transform the input into data that is valuable for the output layer. Finally, the output layer provides an output in the form of a response of the Artificial Neural Networks to the input data provided.",
+          "start_idx": 0,
+          "sentence_count": 7
+        }
+      }
+    ],
+    "success": true
+  },
+  "99dc0b8f88bc56be06ba0630db7f77d2": {
+    "matches": [
+      {
+        "matching_text": "then provide the output , which might act as the input to the next neuron. Each of these neurons is connected to other neurons in complex arrangements at synapses . Now, are you wondering how this is related to Artificial Neural Networks ? Let’s check out what they are in detail and how they learn information. Artificial Neural Networks Artificial Neural Networks contain artificial neurons, which are called units . These units are arranged in a series of layers that together constitute the whole Artificial Neural Network in a system. A layer can have only a dozen units or millions of units , as this depends on how the complex neural networks will be required to learn the hidden patterns in the dataset. Commonly, an Artificial Neur",
+        "source": "https://www.geeksforgeeks.org/artificial-neural-networks-and-its-applications/",
+        "similarity": 0.6666666666666666,
+        "chunk_info": {
+          "text": "Artificial Neural Networks contain artificial neurons, which are called units. These units are arranged in a series of layers that together constitute the whole Artificial Neural Network in a system. A layer can have only a dozen units or millions of units, as this depends on how the complex neural networks will be required to learn the hidden patterns in the dataset.",
+          "start_idx": 0,
+          "sentence_count": 3
+        }
+      },
+      {
+        "matching_text": "Feb 22, 2024 ... These units are arranged in a series of layers that together constitute the whole Artificial Neural Network in a system. A layer can have ...",
+        "source": "https://www.linkedin.com/pulse/artificial-neural-networks-priya-ramesh-kuyoc",
+        "similarity": 0.553030303030303,
+        "chunk_info": {
+          "text": "Artificial Neural Networks contain artificial neurons, which are called units. These units are arranged in a series of layers that together constitute the whole Artificial Neural Network in a system. A layer can have only a dozen units or millions of units, as this depends on how the complex neural networks will be required to learn the hidden patterns in the dataset.",
+          "start_idx": 0,
+          "sentence_count": 3
+        }
+      },
+      {
+        "matching_text": "May 19, 2023 ... These units are arranged in a series of layers that together constitute the whole Artificial Neural Network in a system. A layer can have ...",
+        "source": "https://www.researchgate.net/post/What_are_the_modern_applications_of_artificial_neural_networks_and_the_mechanism_of_data_collection",
+        "similarity": 0.553030303030303,
+        "chunk_info": {
+          "text": "Artificial Neural Networks contain artificial neurons, which are called units. These units are arranged in a series of layers that together constitute the whole Artificial Neural Network in a system. A layer can have only a dozen units or millions of units, as this depends on how the complex neural networks will be required to learn the hidden patterns in the dataset.",
+          "start_idx": 0,
+          "sentence_count": 3
+        }
+      },
+      {
+        "matching_text": "Artificial Neural Networks contain artificial neurons which are. called units. These units are arranged in a series of layers that together constitute the whole ...",
+        "source": "https://www.scribd.com/document/740228702/Unit-IV-Artificial-Neural-Networks",
+        "similarity": 0.6067415730337079,
+        "chunk_info": {
+          "text": "Artificial Neural Networks contain artificial neurons, which are called units. These units are arranged in a series of layers that together constitute the whole Artificial Neural Network in a system. A layer can have only a dozen units or millions of units, as this depends on how the complex neural networks will be required to learn the hidden patterns in the dataset.",
+          "start_idx": 0,
+          "sentence_count": 3
+        }
+      },
+      {
+        "matching_text": "Similar to single-hidden-layer ANNs, those with two hidden layers can ... Are artificial neural networks black boxes? IEEE Trans. Neural Network., 8 (5) ...",
+        "source": "https://www.sciencedirect.com/science/article/pii/S1364815221002024",
+        "similarity": 0.22433460076045628,
+        "chunk_info": {
+          "text": "Artificial Neural Networks contain artificial neurons, which are called units. These units are arranged in a series of layers that together constitute the whole Artificial Neural Network in a system. A layer can have only a dozen units or millions of units, as this depends on how the complex neural networks will be required to learn the hidden patterns in the dataset.",
+          "start_idx": 0,
+          "sentence_count": 3
+        }
+      }
+    ],
+    "success": true
+  },
+  "6858601ec90916948e5fb90d51d481a8": {
+    "matches": [
+      {
+        "matching_text": "Machine learning (ML) is a field of study in artificial intelligence concerned with the development and study of statistical algorithms that can learn from ...",
+        "source": "https://en.wikipedia.org/wiki/Machine_learning",
+        "similarity": 0.2594458438287154,
+        "chunk_info": {
+          "text": "Machine learning is a subfield of artificial intelligence that gives computers the ability to learn without being explicitly programmed. According to Wikipedia, Arthur Samuel coined the term in 1959. This area focuses on algorithms that can improve themselves through experience and data. Algorithms are trained on datasets to find patterns and make predictions. While classical programming defines rules manually, ML models discover those rules automatically. For example, in image recognition, a machine learning model can identify faces or objects by recognizing features such as eyes, edges, and shapes without human-defined logic.",
+          "start_idx": 0,
+          "sentence_count": 6
+        }
+      },
+      {
+        "matching_text": "Aug 23, 2017 ... ... subfield of computer science that, according to Arthur Samuel in 1959, gives 'computers the ability to learn without being explicitly programmed ...",
+        "source": "https://vanguardcanada.com/artificial-intelligence-and-machine-learning-the-next-big-thing-to-watch-out-for-in-tech/",
+        "similarity": 0.26119402985074625,
+        "chunk_info": {
+          "text": "Machine learning is a subfield of artificial intelligence that gives computers the ability to learn without being explicitly programmed. According to Wikipedia, Arthur Samuel coined the term in 1959. This area focuses on algorithms that can improve themselves through experience and data. Algorithms are trained on datasets to find patterns and make predictions. While classical programming defines rules manually, ML models discover those rules automatically. For example, in image recognition, a machine learning model can identify faces or objects by recognizing features such as eyes, edges, and shapes without human-defined logic.",
+          "start_idx": 0,
+          "sentence_count": 6
+        }
+      },
+      {
+        "matching_text": "Jun 27, 2017 ... Machine learning is the subfield of computer science that, according to Arthur Samuel in 1959, gives \"computers the ability to learn without ...",
+        "source": "https://www.leanix.net/en/blog/what-is-the-difference-between-artificial-intelligence-and-machine-learning",
+        "similarity": 0.23618090452261306,
+        "chunk_info": {
+          "text": "Machine learning is a subfield of artificial intelligence that gives computers the ability to learn without being explicitly programmed. According to Wikipedia, Arthur Samuel coined the term in 1959. This area focuses on algorithms that can improve themselves through experience and data. Algorithms are trained on datasets to find patterns and make predictions. While classical programming defines rules manually, ML models discover those rules automatically. For example, in image recognition, a machine learning model can identify faces or objects by recognizing features such as eyes, edges, and shapes without human-defined logic.",
+          "start_idx": 0,
+          "sentence_count": 6
+        }
+      },
+      {
+        "matching_text": "The term “machine learning” was first coined in 1959 by ... ML – Subset of AI that gives computers the ability to learn without being explicitly programed.",
+        "source": "https://www.kyndryl.com/us/en/learn/ai",
+        "similarity": 0.27341772151898736,
+        "chunk_info": {
+          "text": "Machine learning is a subfield of artificial intelligence that gives computers the ability to learn without being explicitly programmed. According to Wikipedia, Arthur Samuel coined the term in 1959. This area focuses on algorithms that can improve themselves through experience and data. Algorithms are trained on datasets to find patterns and make predictions. While classical programming defines rules manually, ML models discover those rules automatically. For example, in image recognition, a machine learning model can identify faces or objects by recognizing features such as eyes, edges, and shapes without human-defined logic.",
+          "start_idx": 0,
+          "sentence_count": 6
+        }
+      }
+    ],
+    "success": true
+  },
+  "6a27dd8bb0127255e26ee2f8b4da9bd1": {
+    "matches": [],
+    "success": true
+  },
+  "2b639850b18b954acc6dfb389e65162f": {
+    "matches": [],
+    "success": true
+  },
+  "3d8694ff3b54148e6bb742111c79d6bb": {
+    "matches": [
+      {
+        "matching_text": "Apr 21, 2021 ... Machine learning is a subfield of artificial intelligence that gives computers the ability to learn without explicitly being programmed.",
+        "source": "https://mitsloan.mit.edu/ideas-made-to-matter/machine-learning-explained",
+        "similarity": 0.896551724137931,
+        "chunk_info": {
+          "text": "\"Machine learning is a subfield of artificial intelligence that gives computers the ability to learn without being explicitly programmed.",
+          "start_idx": 0,
+          "sentence_count": 1
+        }
+      },
+      {
+        "matching_text": "Machine learning (ML) is a type of artificial intelligence that allows machines to learn from data without being explicitly programmed. It does this by ...",
+        "source": "https://www.iso.org/artificial-intelligence/machine-learning",
+        "similarity": 0.7191780821917808,
+        "chunk_info": {
+          "text": "\"Machine learning is a subfield of artificial intelligence that gives computers the ability to learn without being explicitly programmed.",
+          "start_idx": 0,
+          "sentence_count": 1
+        }
+      },
+      {
+        "matching_text": "Sep 11, 2024 ... ... study that gives computers the ability to learn without being explicitly programmed. ... Machine learning is a subfield of artificial intelligence ...",
+        "source": "https://blog.workday.com/en-gb/what-is-machine-learning-understanding-ml.html",
+        "similarity": 0.564935064935065,
+        "chunk_info": {
+          "text": "\"Machine learning is a subfield of artificial intelligence that gives computers the ability to learn without being explicitly programmed.",
+          "start_idx": 0,
+          "sentence_count": 1
+        }
+      },
+      {
+        "matching_text": "Artificial intelligence is a broad field, which refers to the use of technologies to build machines and computers that have the ability to mimic cognitive ...",
+        "source": "https://cloud.google.com/learn/artificial-intelligence-vs-machine-learning",
+        "similarity": 0.42033898305084744,
+        "chunk_info": {
+          "text": "\"Machine learning is a subfield of artificial intelligence that gives computers the ability to learn without being explicitly programmed.",
+          "start_idx": 0,
+          "sentence_count": 1
+        }
+      },
+      {
+        "matching_text": "Machine learning is the sub-field of Computer Science, that gives Computers the ability to learn without being explicitly programmed (Arthur samuel, ...",
+        "source": "https://github.com/Lawrence-Krukrubo/Machine_Learning",
+        "similarity": 0.8235294117647058,
+        "chunk_info": {
+          "text": "\"Machine learning is a subfield of artificial intelligence that gives computers the ability to learn without being explicitly programmed.",
+          "start_idx": 0,
+          "sentence_count": 1
+        }
+      }
+    ],
+    "success": true
+  },
+  "d96912c5d529a182f4236e55ccd2a928": {
+    "matches": [],
+    "success": true
+  },
+  "727a6613849c5f4dd483377d82f37fd1": {
+    "matches": [
+      {
+        "matching_text": "nformation. Artificial Neural Networks Artificial Neural Networks contain artificial neurons, which are called units . These units are arranged in a series of layers that together constitute the whole Artificial Neural Network in a system. A layer can have only a dozen units or millions of units , as this depends on how the complex neural networks will be required to learn the hidden patterns in the dataset. Commonly, an Artificial Neural Network has an input layer, an output layer, as well as hidden layers. The input layer receives data from the outside world , which the neural network needs to analyze or learn about. Then, this data passes through one or multiple hidden layers that transform the input into data that is valuable for the output layer. Finally, the output layer provides an ",
+        "source": "https://www.geeksforgeeks.org/artificial-neural-networks-and-its-applications/",
+        "similarity": 0.5921875,
+        "chunk_info": {
+          "text": "Artificial Neural Networks contain artificial neurons, which are called units. These units are arranged in a series of layers that together constitute the whole Artificial Neural Network in a system. A layer can have only a dozen units or millions of units, as this depends on how the complex neural networks will be required to learn the hidden patterns in the dataset. Commonly, an Artificial Neural Network has an input layer, an output layer, as well as hidden layers. The input layer receives data from the outside world, which the neural network needs to analyze or learn about. Then, this data passes through one or multiple hidden layers that transform the input into data that is valuable for the output layer. Finally, the output layer provides an output in the form of a response of the Artificial Neural Networks to the input data provided.The Indonesian island of Bali is all the rage right now among digital nomads, young backpackers, families and couples looking for a bit of romance. With white sandy beaches and many luxurious resorts, it’s the perfect destination for those seeking a little Asian getaway. For those who enjoy a slightly more active holiday, there’s also plenty of fantastic hiking trails along with some of the world’s best diving spots. Or, if history and culture are more your thing, the island’s mixed Buddhist and Hindu history means it has striking temples around nearly every corner. • Why go: Bali is an absolute tropical paradise - it’s like stepping into a postcard! • Best season: April to June - just before high season, but still during the island’s dry season • Insider’s tip: The best and most convenient way to travel around Bali is to pre-arrange a driver, particularly when travelling to and from the airport",
+          "start_idx": 0,
+          "sentence_count": 12
+        }
+      },
+      {
+        "matching_text": "y . New to LinkedIn? Join now or New to LinkedIn? Join now By clicking Continue to join or sign in, you agree to LinkedIn’s User Agreement , Privacy Policy , and Cookie Policy . Skip to main content Artificial Neural Networks Artificial Neural Networks contain artificial neurons which are called units . These units are arranged in a series of layers that together constitute the whole Artificial Neural Network in a system. A layer can have only a dozen units or millions of units as this depends on how the complex neural networks will be required to learn the hidden patterns in the dataset. Commonly, Artificial Neural Network has an input layer, an output layer as well as hidden layers. The input layer receives data from the outside world which the neural network needs to analyze or learn ab",
+        "source": "https://www.linkedin.com/pulse/artificial-neural-networks-priya-ramesh-kuyoc",
+        "similarity": 0.42109375,
+        "chunk_info": {
+          "text": "Artificial Neural Networks contain artificial neurons, which are called units. These units are arranged in a series of layers that together constitute the whole Artificial Neural Network in a system. A layer can have only a dozen units or millions of units, as this depends on how the complex neural networks will be required to learn the hidden patterns in the dataset. Commonly, an Artificial Neural Network has an input layer, an output layer, as well as hidden layers. The input layer receives data from the outside world, which the neural network needs to analyze or learn about. Then, this data passes through one or multiple hidden layers that transform the input into data that is valuable for the output layer. Finally, the output layer provides an output in the form of a response of the Artificial Neural Networks to the input data provided.The Indonesian island of Bali is all the rage right now among digital nomads, young backpackers, families and couples looking for a bit of romance. With white sandy beaches and many luxurious resorts, it’s the perfect destination for those seeking a little Asian getaway. For those who enjoy a slightly more active holiday, there’s also plenty of fantastic hiking trails along with some of the world’s best diving spots. Or, if history and culture are more your thing, the island’s mixed Buddhist and Hindu history means it has striking temples around nearly every corner. • Why go: Bali is an absolute tropical paradise - it’s like stepping into a postcard! • Best season: April to June - just before high season, but still during the island’s dry season • Insider’s tip: The best and most convenient way to travel around Bali is to pre-arrange a driver, particularly when travelling to and from the airport",
+          "start_idx": 0,
+          "sentence_count": 12
+        }
+      }
+    ],
+    "success": true
+  },
+  "568cd7a90ffcdda0553f2a92a2a485af": {
+    "matches": [
+      {
+        "matching_text": "eries of layers that together constitute the whole Artificial Neural Network in a system. A layer can have only a dozen units or millions of units , as this depends on how the complex neural networks will be required to learn the hidden patterns in the dataset. Commonly, an Artificial Neural Network has an input layer, an output layer, as well as hidden layers. The input layer receives data from the outside world , which the neural network needs to analyze or learn about. Then, this data passes through one or multiple hidden layers that transform the input into data that is valuable for the output layer. Finally, the output layer provides an output in the form of a response of the Artificial Neural Networks to the input data provided. In the majority of neural networks, units are interconn",
+        "source": "https://www.geeksforgeeks.org/artificial-neural-networks-and-its-applications/",
+        "similarity": 0.5550847457627118,
+        "chunk_info": {
+          "text": "A layer can have only a dozen units or millions of units, as this depends on how the complex neural networks will be required to learn the hidden patterns in the dataset. Commonly, an Artificial Neural Network has an input layer, an output layer, as well as hidden layers. The input layer receives data from the outside world, which the neural network needs to analyze or learn about. Then, this data passes through one or multiple hidden layers that transform the input into data that is valuable for the output layer. Finally, the output layer provides an output in the form of a response of the Artificial Neural Networks to the input data provided.The Indonesian island of Bali is all the rage right now among digital nomads, young backpackers, families and couples looking for a bit of romance. With white sandy beaches and many luxurious resorts, it’s the perfect destination for those seeking a little Asian getaway. For those who enjoy a slightly more active holiday, there’s also plenty of fantastic hiking trails along with some of the world’s best diving spots. Or, if history and culture are more your thing, the island’s mixed Buddhist and Hindu history means it has striking temples around nearly every corner. • Why go: Bali is an absolute tropical paradise - it’s like stepping into a postcard! • Best season: April to June - just before high season, but still during the island’s dry season • Insider’s tip: The best and most convenient way to travel around Bali is to pre-arrange a driver, particularly when travelling to and from the airport",
+          "start_idx": 2,
+          "sentence_count": 10
+        }
+      },
+      {
+        "matching_text": "y . New to LinkedIn? Join now or New to LinkedIn? Join now By clicking Continue to join or sign in, you agree to LinkedIn’s User Agreement , Privacy Policy , and Cookie Policy . Skip to main content Artificial Neural Networks Artificial Neural Networks contain artificial neurons which are called units . These units are arranged in a series of layers that together constitute the whole Artificial Neural Network in a system. A layer can have only a dozen units or millions of units as this depends on how the complex neural networks will be required to learn the hidden patterns in the dataset. Commonly, Artificial Neural Network has an input layer, an output layer as well as hidden layers. The input layer receives data from the outside world which the neural network needs to analyze or learn ab",
+        "source": "https://www.linkedin.com/pulse/artificial-neural-networks-priya-ramesh-kuyoc",
+        "similarity": 0.3050847457627119,
+        "chunk_info": {
+          "text": "A layer can have only a dozen units or millions of units, as this depends on how the complex neural networks will be required to learn the hidden patterns in the dataset. Commonly, an Artificial Neural Network has an input layer, an output layer, as well as hidden layers. The input layer receives data from the outside world, which the neural network needs to analyze or learn about. Then, this data passes through one or multiple hidden layers that transform the input into data that is valuable for the output layer. Finally, the output layer provides an output in the form of a response of the Artificial Neural Networks to the input data provided.The Indonesian island of Bali is all the rage right now among digital nomads, young backpackers, families and couples looking for a bit of romance. With white sandy beaches and many luxurious resorts, it’s the perfect destination for those seeking a little Asian getaway. For those who enjoy a slightly more active holiday, there’s also plenty of fantastic hiking trails along with some of the world’s best diving spots. Or, if history and culture are more your thing, the island’s mixed Buddhist and Hindu history means it has striking temples around nearly every corner. • Why go: Bali is an absolute tropical paradise - it’s like stepping into a postcard! • Best season: April to June - just before high season, but still during the island’s dry season • Insider’s tip: The best and most convenient way to travel around Bali is to pre-arrange a driver, particularly when travelling to and from the airport",
+          "start_idx": 2,
+          "sentence_count": 10
+        }
+      }
+    ],
+    "success": true
+  },
+  "32e0e6703aa809b5e34061d9a1afa3ab": {
+    "matches": [
+      {
+        "matching_text": " has an input layer, an output layer, as well as hidden layers. The input layer receives data from the outside world , which the neural network needs to analyze or learn about. Then, this data passes through one or multiple hidden layers that transform the input into data that is valuable for the output layer. Finally, the output layer provides an output in the form of a response of the Artificial Neural Networks to the input data provided. In the majority of neural networks, units are interconnected from one layer to another. Each of these connections has weights that determine the influence of one unit on another unit. As the data transfers from one unit to another, the neural network learns more and more about the data, which eventually results in an output from the output layer. If you",
+        "source": "https://www.geeksforgeeks.org/artificial-neural-networks-and-its-applications/",
+        "similarity": 0.36703402012458075,
+        "chunk_info": {
+          "text": "The input layer receives data from the outside world, which the neural network needs to analyze or learn about. Then, this data passes through one or multiple hidden layers that transform the input into data that is valuable for the output layer. Finally, the output layer provides an output in the form of a response of the Artificial Neural Networks to the input data provided.The Indonesian island of Bali is all the rage right now among digital nomads, young backpackers, families and couples looking for a bit of romance. With white sandy beaches and many luxurious resorts, it’s the perfect destination for those seeking a little Asian getaway. For those who enjoy a slightly more active holiday, there’s also plenty of fantastic hiking trails along with some of the world’s best diving spots. Or, if history and culture are more your thing, the island’s mixed Buddhist and Hindu history means it has striking temples around nearly every corner. • Why go: Bali is an absolute tropical paradise - it’s like stepping into a postcard! • Best season: April to June - just before high season, but still during the island’s dry season • Insider’s tip: The best and most convenient way to travel around Bali is to pre-arrange a driver, particularly when travelling to and from the airport",
+          "start_idx": 4,
+          "sentence_count": 8
+        }
+      }
+    ],
+    "success": true
+  },
+  "3a850781f4b152386e7cd82c0cb8be66": {
+    "matches": [
+      {
+        "matching_text": "nformation. Artificial Neural Networks Artificial Neural Networks contain artificial neurons, which are called units . These units are arranged in a series of layers that together constitute the whole Artificial Neural Network in a system. A layer can have only a dozen units or millions of units , as this depends on how the complex neural networks will be required to learn the hidden patterns in the dataset. Commonly, an Artificial Neural Network has an input layer, an output layer, as well as hidden layers. The input layer receives data from the outside world , which the neural network needs to analyze or learn about. Then, this data passes through one or multiple hidden layers that transform the input into data that is valuable for the output layer. Finally, the output layer provides an ",
+        "source": "https://www.geeksforgeeks.org/artificial-neural-networks-and-its-applications/",
+        "similarity": 0.6816546762589928,
+        "chunk_info": {
+          "text": "Artificial Neural Networks contain artificial neurons, which are called units. These units are arranged in a series of layers that together constitute the whole Artificial Neural Network in a system. A layer can have only a dozen units or millions of units, as this depends on how the complex neural networks will be required to learn the hidden patterns in the dataset. Commonly, an Artificial Neural Network has an input layer, an output layer, as well as hidden layers. The input layer receives data from the outside world, which the neural network needs to analyze or learn about. Then, this data passes through one or multiple hidden layers that transform the input into data that is valuable for the output layer. Finally, the output layer provides an output in the form of a response of the Artificial Neural Networks to the input data provided.The Indonesian island of Bali is all the rage right now among digital nomads, young backpackers, families and couples looking for a bit of romance. With white sandy beaches and many luxurious resorts, it’s the perfect destination for those seeking a little Asian getaway. For those who enjoy a slightly more active holiday, there’s also plenty of fantastic hiking trails along with some of the world’s best diving spots. Or, if history and culture are more your thing, the island’s mixed Buddhist and Hindu history means it has striking temples around nearly every corner.",
+          "start_idx": 0,
+          "sentence_count": 10
+        }
+      },
+      {
+        "matching_text": "y . New to LinkedIn? Join now or New to LinkedIn? Join now By clicking Continue to join or sign in, you agree to LinkedIn’s User Agreement , Privacy Policy , and Cookie Policy . Skip to main content Artificial Neural Networks Artificial Neural Networks contain artificial neurons which are called units . These units are arranged in a series of layers that together constitute the whole Artificial Neural Network in a system. A layer can have only a dozen units or millions of units as this depends on how the complex neural networks will be required to learn the hidden patterns in the dataset. Commonly, Artificial Neural Network has an input layer, an output layer as well as hidden layers. The input layer receives data from the outside world which the neural network needs to analyze or learn ab",
+        "source": "https://www.linkedin.com/pulse/artificial-neural-networks-priya-ramesh-kuyoc",
+        "similarity": 0.4847122302158273,
+        "chunk_info": {
+          "text": "Artificial Neural Networks contain artificial neurons, which are called units. These units are arranged in a series of layers that together constitute the whole Artificial Neural Network in a system. A layer can have only a dozen units or millions of units, as this depends on how the complex neural networks will be required to learn the hidden patterns in the dataset. Commonly, an Artificial Neural Network has an input layer, an output layer, as well as hidden layers. The input layer receives data from the outside world, which the neural network needs to analyze or learn about. Then, this data passes through one or multiple hidden layers that transform the input into data that is valuable for the output layer. Finally, the output layer provides an output in the form of a response of the Artificial Neural Networks to the input data provided.The Indonesian island of Bali is all the rage right now among digital nomads, young backpackers, families and couples looking for a bit of romance. With white sandy beaches and many luxurious resorts, it’s the perfect destination for those seeking a little Asian getaway. For those who enjoy a slightly more active holiday, there’s also plenty of fantastic hiking trails along with some of the world’s best diving spots. Or, if history and culture are more your thing, the island’s mixed Buddhist and Hindu history means it has striking temples around nearly every corner.",
+          "start_idx": 0,
+          "sentence_count": 10
+        }
+      }
+    ],
+    "success": true
+  },
+  "b28a28396418b34d9eb4da1cbc9ce473": {
+    "matches": [
+      {
+        "matching_text": "• Best season: April to June - just before high season, but still during the island's dry season. • Insider's tip: The best and most convenient way to travel ...",
+        "source": "https://gacbe.ac.in/pdf/ematerial/18MTT14C-U5.pdf",
+        "similarity": 0.625,
+        "chunk_info": {
+          "text": "• Why go: Bali is an absolute tropical paradise - it’s like stepping into a postcard! • Best season: April to June - just before high season, but still during the island’s dry season • Insider’s tip: The best and most convenient way to travel around Bali is to pre-arrange a driver, particularly when travelling to and from the airport",
+          "start_idx": 10,
+          "sentence_count": 2
+        }
+      },
+      {
+        "matching_text": "Get some insider knowledge and tips before you decide to visit these places, when it is best to go, and why they are a must-visit for their luxury resorts, ...",
+        "source": "https://insidervillas.com/26-exotic-places/",
+        "similarity": 0.2388663967611336,
+        "chunk_info": {
+          "text": "• Why go: Bali is an absolute tropical paradise - it’s like stepping into a postcard! • Best season: April to June - just before high season, but still during the island’s dry season • Insider’s tip: The best and most convenient way to travel around Bali is to pre-arrange a driver, particularly when travelling to and from the airport",
+          "start_idx": 10,
+          "sentence_count": 2
+        }
+      },
+      {
+        "matching_text": "I don't know about you, but there are certain places in the world that just stick with you—places that feel less like a vacation and more like coming home. For ...",
+        "source": "https://addieabroad.com/the-ultimate-guide-to-captiva-island-florida-2025-edition/",
+        "similarity": 0.21285140562248997,
+        "chunk_info": {
+          "text": "• Why go: Bali is an absolute tropical paradise - it’s like stepping into a postcard! • Best season: April to June - just before high season, but still during the island’s dry season • Insider’s tip: The best and most convenient way to travel around Bali is to pre-arrange a driver, particularly when travelling to and from the airport",
+          "start_idx": 10,
+          "sentence_count": 2
+        }
+      },
+      {
+        "matching_text": "Jan 8, 2021 ... There are definitely pros and cons to visiting in every season. The islands are mostly warm year-round but the best time to visit is from ...",
+        "source": "https://www.wayfarerfootprints.com/post/planning-a-trip-to-maldives",
+        "similarity": 0.3333333333333333,
+        "chunk_info": {
+          "text": "• Why go: Bali is an absolute tropical paradise - it’s like stepping into a postcard! • Best season: April to June - just before high season, but still during the island’s dry season • Insider’s tip: The best and most convenient way to travel around Bali is to pre-arrange a driver, particularly when travelling to and from the airport",
+          "start_idx": 10,
+          "sentence_count": 2
+        }
+      }
+    ],
+    "success": true
+  },
+  "1ca24c3bae2e92e50f598349ac25e2c8": {
+    "matches": [],
+    "success": true
+  },
+  "b5178f682f49e0eb5f70a3bcd0fef785": {
+    "matches": [
+      {
+        "matching_text": "Jan 14, 2022 ... This means that the output layer gives the answer or prediction of the artificial neural network model based on the input from the input layer.",
+        "source": "https://link.springer.com/chapter/10.1007/978-3-030-89010-0_10",
+        "similarity": 0.6027397260273972,
+        "chunk_info": {
+          "text": "Finally, the output layer provides an output in the form of a response of the Artificial Neural Networks to the input data provided.",
+          "start_idx": 8,
+          "sentence_count": 1
+        }
+      },
+      {
+        "matching_text": "Apr 4, 2025 ... Finally, the output layer provides an output in the form of a response of the Artificial Neural Networks to the input data provided. In the ...",
+        "source": "https://www.geeksforgeeks.org/artificial-neural-networks-and-its-applications/",
+        "similarity": 0.9072164948453608,
+        "chunk_info": {
+          "text": "Finally, the output layer provides an output in the form of a response of the Artificial Neural Networks to the input data provided.",
+          "start_idx": 8,
+          "sentence_count": 1
+        }
+      },
+      {
+        "matching_text": "Mar 31, 2021 ... ... data to map the given input to specific labels. DL is designed using numerous layers of algorithms (artificial neural networks, or ANNs) ...",
+        "source": "https://journalofbigdata.springeropen.com/articles/10.1186/s40537-021-00444-8",
+        "similarity": 0.3890784982935154,
+        "chunk_info": {
+          "text": "Finally, the output layer provides an output in the form of a response of the Artificial Neural Networks to the input data provided.",
+          "start_idx": 8,
+          "sentence_count": 1
+        }
+      },
+      {
+        "matching_text": "Every neural network consists of layers of nodes or artificial neurons, an input layer, one or more hidden layers, and an output layer. Each node connects ...",
+        "source": "https://www.ibm.com/think/topics/neural-networks",
+        "similarity": 0.3793103448275862,
+        "chunk_info": {
+          "text": "Finally, the output layer provides an output in the form of a response of the Artificial Neural Networks to the input data provided.",
+          "start_idx": 8,
+          "sentence_count": 1
+        }
+      }
+    ],
+    "success": true
+  },
+  "e62e926a61df0e4a33f06fd797c76d17": {
+    "matches": [
+      {
+        "matching_text": "Nov 5, 2024 ... ... nomads, young backpackers, families and couples looking for a bit of romance. With white sandy beaches and many luxurious resorts, it's the ...",
+        "source": "https://kr.pinterest.com/pin/692780355214617509/",
+        "similarity": 0.2073342736248237,
+        "chunk_info": {
+          "text": "The Indonesian island of Bali is all the rage right now among digital nomads, young backpackers, families and couples looking for a bit of romance. With white sandy beaches and many luxurious resorts, it’s the perfect destination for those seeking a little Asian getaway. For those who enjoy a slightly more active holiday, there’s also plenty of fantastic hiking trails along with some of the world’s bArtificial Neural Networks contain artificial neurons, which are called units. These units are arranged in a series of layers that together constitute the whole Artificial Neural Network in a system. A layer can have only a dozen units or millions of units, as this depends on how the complex neural networks will be required to learn the hidden patterns in the dataset. Commonly, an Artificial Neural Network has an input layer, an output layer, as well as hidden layers. The input layer receives data from the outside world, which the neural network needs to analyze or learn about. Then, this data passes through one or multiple hidden layers that transform the input into data that is valuable for the output layer. Finally, the output layer provides an output in the form of a response of the Artificial Neural Networks to the input data provided.",
+          "start_idx": 0,
+          "sentence_count": 9
+        }
+      },
+      {
+        "matching_text": "The Indonesian island of Bali is all the rage right now among digital nomads, young ... luxurious resorts, it's the perfect destination for those seeking a little ...",
+        "source": "https://gacbe.ac.in/pdf/ematerial/18MTT14C-U5.pdf",
+        "similarity": 0.22941590429275158,
+        "chunk_info": {
+          "text": "The Indonesian island of Bali is all the rage right now among digital nomads, young backpackers, families and couples looking for a bit of romance. With white sandy beaches and many luxurious resorts, it’s the perfect destination for those seeking a little Asian getaway. For those who enjoy a slightly more active holiday, there’s also plenty of fantastic hiking trails along with some of the world’s bArtificial Neural Networks contain artificial neurons, which are called units. These units are arranged in a series of layers that together constitute the whole Artificial Neural Network in a system. A layer can have only a dozen units or millions of units, as this depends on how the complex neural networks will be required to learn the hidden patterns in the dataset. Commonly, an Artificial Neural Network has an input layer, an output layer, as well as hidden layers. The input layer receives data from the outside world, which the neural network needs to analyze or learn about. Then, this data passes through one or multiple hidden layers that transform the input into data that is valuable for the output layer. Finally, the output layer provides an output in the form of a response of the Artificial Neural Networks to the input data provided.",
+          "start_idx": 0,
+          "sentence_count": 9
+        }
+      }
+    ],
+    "success": true
+  },
+  "642c82978d1136e1de373c05017045df": {
+    "matches": [
+      {
+        "matching_text": "Aug 11, 2022 ... The Online Blood Donation Management System, the purpose of which is to act as a bridge between a person who needs blood, a patient, and a blood donor.",
+        "source": "https://ieeexplore.ieee.org/document/9844389/",
+        "similarity": 0.2287878787878788,
+        "chunk_info": {
+          "text": "The Online Blood Donation Management System, the purpose of which is to act as a bridge between a person who needs blood, a patient, and a blood donor. The design of an automatic blood system has become an integral part for saving the human lives, who need the blood under different situations. Since, there are various drawbacks of the pre-existing system like privacy issues for the donors, which are getting reflected directly on the interface. Thus, we have designed a robust system that will create a connection between different hospitals, NGOs, and blood banks to help the patient in any difficult situation. Thus, HIPPA model provides a backbone for security breaches The interface designed will be easy-to-use and easy to access and will be a fast, efficient, and reliable way to get lifesaving blood, totally free of charge. Apart from this the visualization of the data is present along with the one extra COVID module, which will help covid and normal patients for plasma donation. The main aim of the paper is to reduce the complications of finding a blood donor during panic situations and provide a high level of security for the donors.",
+          "start_idx": 0,
+          "sentence_count": 7
+        }
+      },
+      {
+        "matching_text": "The Online Blood Donation Management System, the purpose of which is to act as a bridge between a person who needs blood, a patient, and a blood donor. The ...",
+        "source": "https://www.researchgate.net/figure/Performance-goal-of-the-proposed-system_tbl1_332733912",
+        "similarity": 0.2425629290617849,
+        "chunk_info": {
+          "text": "The Online Blood Donation Management System, the purpose of which is to act as a bridge between a person who needs blood, a patient, and a blood donor. The design of an automatic blood system has become an integral part for saving the human lives, who need the blood under different situations. Since, there are various drawbacks of the pre-existing system like privacy issues for the donors, which are getting reflected directly on the interface. Thus, we have designed a robust system that will create a connection between different hospitals, NGOs, and blood banks to help the patient in any difficult situation. Thus, HIPPA model provides a backbone for security breaches The interface designed will be easy-to-use and easy to access and will be a fast, efficient, and reliable way to get lifesaving blood, totally free of charge. Apart from this the visualization of the data is present along with the one extra COVID module, which will help covid and normal patients for plasma donation. The main aim of the paper is to reduce the complications of finding a blood donor during panic situations and provide a high level of security for the donors.",
+          "start_idx": 0,
+          "sentence_count": 7
+        }
+      }
+    ],
+    "success": true
+  },
+  "7296934ab0e521b582dc7b5a671ef0df": {
+    "matches": [
+      {
+        "matching_text": "The results of this study indicate that the proposed system can improve ... errors, enhancing data security, and increasing trust in the blood donation process.",
+        "source": "https://ijrpr.com/uploads/V4ISSUE5/IJRPR12623.pdf",
+        "similarity": 0.29791271347248577,
+        "chunk_info": {
+          "text": "The results of this study indicate that the proposed system can improve blood bank and donor management systems by reducing errors, enhancing data security, and increasing trust in the blood donation process. Keywords- Blood Management, Donor Information, Transparency, Blood Transfusion, Blood Supplement. INTRODUCTION Blood is a vital component of the human body and plays a critical role in maintaining the normal functioning of organs and tissues. However, due to various medical conditions such as accidents, surgeries, and diseases, there is a constant demand for blood transfusion in hospitals and healthcare centres. Blood banks serve as a critical link between donors and recipients by collecting, testing, processing, and distributing blood and its components. Donor management systems have been developed to automate and streamline the process of blood donation, reduce the risk of e",
+          "start_idx": 8,
+          "sentence_count": 6
+        }
+      }
+    ],
+    "success": true
+  },
+  "927363cf56f79a4b597acde9809646c9": {
+    "matches": [],
+    "success": true
+  },
+  "e867dc528fae03bace5ed9fe01467f24": {
+    "matches": [],
+    "success": false
+  },
+  "f84e5c7ea65f999251c8bafd5215fe40": {
+    "matches": [],
+    "success": true
+  },
+  "55c9379f43bdf3f5d2a9e66157afdaba": {
+    "matches": [
+      {
+        "matching_text": " If so, the Andaman and Nicobar Islands, a stunning union territory in India, needs to take the place at the top of your bucket list… immediately! There are 572 islands in total, but only about 38 of them are permanently inhabited, each with gorgeous beaches, diverse marine life, mangroves and tropical rainforests. 633 Andaman Aesthetic Andaman And Nicobar Islands Aesthetic Andaman Nicobar Photography Andaman And Nicobar Islands Couple Photo Lakshadweep Islands Photography Andaman Nicobar Islands Andaman Nicobar Neil Island Andaman Photography Andaman And Nicobar Island Ross island The best place to visit, andaman and Nicobar islands 608 Andaman Nicobar Islands Neil Island Andaman Andaman And Nicobar Island Havelock Island Photography Culture Of Andaman And Nicobar Havelock Island Andaman ",
+        "source": "https://www.pinterest.com/ideas/andaman-islands/909170738115/",
+        "similarity": 0.24018126888217523,
+        "chunk_info": {
+          "text": "If so, the Andaman and Nicobar Islands, a stunning union territory in India , needs to take the place at the top of your bucket list… immediately! There are 572 islands in total, but only about 38 of them are permanently inhabited, each with gorgeous beaches, dive rse marine life, mangroves and tropical rainforests - everything you need to enjoy some tropical nature. • Why go: The Andaman and Nicobar Islands are quickly developing into one of the hottest exotic holiday locations in Asia • Best season: November to April - avoid monsoon season and enjoy some of the archipelago's best weather • Insider’s tip: These islands have some incredible marine life. If you want to see local tortoises, visit during their nesting season between December and March. • Recommended duration: 5-6 days For beach goers, there are 572 islands to be discovered here. 5. KOH SAMET, THAILA ND Koh Samet is a picture -perfect island just off the coast of mainland Thailand , featuring rows upon rows of ‘Samet’ (cajeput trees), long sandy beaches, and plenty of crystal clear bays. The island gets less rainfall than anywhere e lse in Thailand and is sunny nearly year -round, making it the perfect destination for water sports, beach lounging and nights spent in cliffside bungalows. The island is also known for its booming nightlife, so be sure to bring your dancing shoes! • Why go: Koh Samet has some of the most gorgeous beaches in all of Asia. • Best season: November to April - Avoid the (somewhat) rainy season and enjoy as much sun as you can! • Insider’s tip: If you want to avoid the crowds, head south. The further south you go, t he more undeveloped the island is - meaning beautiful but uncrowded beaches! • Recommended duration: 3-4 days Accompanied by favorable weather and an interesting beach -vibe, Koh Samet is where to head when in Thailand.",
+          "start_idx": 24,
+          "sentence_count": 14
+        }
+      }
+    ],
+    "success": true
+  },
+  "82babdbd4065c6beb58e64044c1fdc28": {
+    "matches": [],
+    "success": true
+  },
+  "42105b1c6df125bb4e34de4fe20117b7": {
+    "matches": [],
+    "success": true
+  },
+  "cdee2df2323392339183241fc9174094": {
+    "matches": [
+      {
+        "matching_text": "Mar 13, 2020 ... Much like the yin and yang symbol on its country's flag, Seoul is a smooth blend of contradictions. Its shopping districts stretch for miles and ...",
+        "source": "https://www.pinterest.com/pin/seoul-south-korea--676102962797319858/",
+        "similarity": 0.24177631578947367,
+        "chunk_info": {
+          "text": "Much like the yin and yang symbol on its country’s flag, Seoul is a smooth blend of contradictions. Its shopping districts stretch for miles and miles, with hot ni ghtclubs in between. When you want to indulge in some of the country’s history , however, old Seoul is just a few paces away. You coul d spend hours touring the city’s five large palaces from the Joseon Dynasty before hopping over to Bukchon Village to see some of the city’s more traditional wooden homes. • Why go: There is truly something for everyone in Seoul, whether you like to take thi ngs slow or are a fan of the go -go-go • Best season: March to May - you’ll want to avoid the city’s cold winters and humid summers as much as you can • Insider’s tip: Many street food hot spots are open 24 hours, so you’ll never go hungry - but keep in mind th at the subway stops running between midnight and 5:30 am • Recommended duration: 4-5 days Seoul is a destination that perfectly merges the old and the new. The Gyeongbokgung Palace is the largest palace built by the Joseon dynasty.",
+          "start_idx": 48,
+          "sentence_count": 6
+        }
+      }
+    ],
+    "success": true
+  },
+  "62d88aadadf0ee761d51c88bbaac6c09": {
+    "matches": [],
+    "success": true
+  },
+  "4179e3997d9d8ced8920953da3a9e5a1": {
+    "matches": [],
+    "success": true
+  },
+  "18bacf4a804671ac28a741fbbf2d5862": {
+    "matches": [],
+    "success": true
+  },
+  "80e4f72b7ac6b91784c9b4bf6b0fc954": {
+    "matches": [],
+    "success": true
+  },
+  "144ace7eb1c8cad6642ff2ce6f01eb9d": {
+    "matches": [],
+    "success": true
+  },
+  "5b279527271002089061b716ebc9bfb2": {
+    "matches": [],
+    "success": true
+  },
+  "6ebe5ac4d63c6e04af10f98ac4803b81": {
+    "matches": [],
+    "success": true
+  },
+  "59be092e32f3a9e05b3a61e5df7d750b": {
+    "matches": [],
+    "success": true
+  },
+  "a79ab19ce9f2842982c3eace42c61e5f": {
+    "matches": [],
+    "success": true
+  },
+  "f5b9dc848bb9f767a2c223516d8cd849": {
+    "matches": [],
+    "success": true
+  },
+  "2fc72b094fb47215b99e5d40c93579ff": {
+    "matches": [],
+    "success": true
+  },
+  "b9e8b2a98cf1d2017d88262797924241": {
+    "matches": [
+      {
+        "matching_text": "Jul 17, 2023 ... Such research demonstrates that GenAI has potential to transform the teaching and learning process as well as improve student outcomes in higher ...",
+        "source": "https://educationaltechnologyjournal.springeropen.com/articles/10.1186/s41239-023-00411-8",
+        "similarity": 0.21140939597315436,
+        "chunk_info": {
+          "text": "A review of current plagiarism detection systems and academic literature reveals several key gaps that the proposed project aims to address , Integration of Textual and Visual Plagiarism Detection: Most tools handle either text or image analysi s, not both. There is a need for a unified system that can extract and evaluate both textual and image content for originality. Real-Time Online Detection: Existing tools often depend on",
+          "start_idx": 88,
+          "sentence_count": 3
+        }
+      },
+      {
+        "matching_text": "Dec 18, 2022 ... After spending a day tinkering with OpenAI's ChatGPT, my main take-away was that these bots are essentially an amplified Google summary.",
+        "source": "https://www.reddit.com/r/ChatGPT/comments/zozc2b/i_used_chat_gpt_to_write_a_300_page_16_chapter/",
+        "similarity": 0.2089041095890411,
+        "chunk_info": {
+          "text": "A review of current plagiarism detection systems and academic literature reveals several key gaps that the proposed project aims to address , Integration of Textual and Visual Plagiarism Detection: Most tools handle either text or image analysi s, not both. There is a need for a unified system that can extract and evaluate both textual and image content for originality. Real-Time Online Detection: Existing tools often depend on",
+          "start_idx": 88,
+          "sentence_count": 3
+        }
+      }
+    ],
+    "success": true
+  },
+  "338517ca0b55c3b0b19fbf80d12cf68b": {
+    "matches": [],
+    "success": true
+  },
+  "8e8df60f04c40847fe46f23b857ec5c1": {
+    "matches": [],
+    "success": false
+  },
+  "675137b67da9423ab71adec61ef3efb6": {
+    "matches": [],
+    "success": false
+  },
+  "40f2d7575e1c6958a6422f016c0a807c": {
+    "matches": [],
+    "success": false
+  },
+  "da4489663f59ab46819ea2c8fb9e4c36": {
+    "matches": [],
+    "success": false
+  },
+  "b19a0b651c105e82807c65dd24acda34": {
+    "matches": [],
+    "success": false
+  },
+  "bc5bbaf92ee8aba5d2d0283cdb08b5c2": {
+    "matches": [],
+    "success": true
+  },
+  "f0f35be790996c84c412e9734639da4d": {
+    "matches": [
+      {
+        "matching_text": "atic analysis tools is the high false alarm rate. To address the false alarm issue, we design bug detection rules by learning from a large number of real bugs from open-source projects from GitHub. Specifically, we build a framework that learns and refines bug detection rules for fewer false positives. Based on the framework, we implemented ten patterns, six of which are new ones to existing tools. To evaluate the framework, we implemented a static analysis tool, FeeFin, based on the framework with the ten bug detection rules and applied the tool for 1,800 open-source projects in GitHub. The 57 detected bugs by FeeFin has been confirmed by developers as true positives and 44 bugs out of the detected bugs were actually fixed. CCS CONCEPTS • Software and its engineering →Automated static ana",
+        "source": "https://lifove.github.io/files/feefin.pdf",
+        "similarity": 0.9279393173198482,
+        "chunk_info": {
+          "text": "One of the challenging issues of the existing static analysis tools is the high false alarm rate. To address the false alarm issue, we design bug detection rules by learning from a large number of real bugs from open-source projects from GitHub. Specifically, we build a framework that learns and refines bug detection rules for fewer false positives. Based on the framework, we implemented ten patterns, six of which are new ones to existing tools. To evaluate the framework, we implemented a static analysis tool, FeeFin, based on the framework with the ten bug detection rules and applied the tool for 1,800 open-source projects in GitHub. The 57 detected bugs by FeeFin has been confirmed by developers as true positives and 44 bugs out of the detected bugs were actually fixed.",
+          "start_idx": 0,
+          "sentence_count": 6
+        }
+      }
+    ],
+    "success": true
+  },
+  "df3377a5613807fad705c5bf89d40c96": {
+    "matches": [
+      {
+        "matching_text": "atic analysis tools is the high false alarm rate. To address the false alarm issue, we design bug detection rules by learning from a large number of real bugs from open-source projects from GitHub. Specifically, we build a framework that learns and refines bug detection rules for fewer false positives. Based on the framework, we implemented ten patterns, six of which are new ones to existing tools. To evaluate the framework, we implemented a static analysis tool, FeeFin, based on the framework with the ten bug detection rules and applied the tool for 1,800 open-source projects in GitHub. The 57 detected bugs by FeeFin has been confirmed by developers as true positives and 44 bugs out of the detected bugs were actually fixed. CCS CONCEPTS • Software and its engineering →Automated static ana",
+        "source": "https://lifove.github.io/files/feefin.pdf",
+        "similarity": 0.764748725418791,
+        "chunk_info": {
+          "text": "One of the challenging issues of the existing static analysis tools is the high false alarm rate. To address the false alarm issue, we design bug detection rules by learning from a large number of real bugs from open-source projects from GitHub. Specifically, we build a framework that learns and refines bug detection rules for fewer false positives. Based on the framework, we implemented ten patterns, six of which are new ones to existing tools. To evaluate the framework, we implemented a static analysis tool, FeeFin, based on the framework with the ten bug detection",
+          "start_idx": 0,
+          "sentence_count": 5
+        }
+      }
+    ],
+    "success": true
+  },
+  "54c502311f07cefc0170a93e85f7dbbe": {
+    "matches": [],
+    "success": true
+  },
+  "9641e08422ce8ad53341547e74fde235": {
+    "matches": [
+      {
+        "matching_text": "Aug 15, 2019 ... Why is Network Topology Important? Types of Network Topology. Star Topology Bus Topology Ring Topology Tree Topology Mesh Topology Hybrid ...",
+        "source": "https://www.dnsstuff.com/what-is-network-topology",
+        "similarity": 0.2177121771217712,
+        "chunk_info": {
+          "text": "Topology: Network topology refers to the physical and logical arrangement of nodes on a network. The common network topologies include bus, star, ring, mesh, and tree. Service Provider Networks: These types of Networks give permission to take Network Capacity and Functionality on lease from the Provider. Service Provider Networks include Wireless Communications, Data Carriers, etc.",
+          "start_idx": 8,
+          "sentence_count": 4
+        }
+      },
+      {
+        "matching_text": "Oct 24, 2024 ... The main types of network topologies include: Point-to-point topology; Bus topology; Ring topology; Star topology; Tree topology; Mesh topology ...",
+        "source": "https://www.ibm.com/think/topics/network-topology",
+        "similarity": 0.23722627737226276,
+        "chunk_info": {
+          "text": "Topology: Network topology refers to the physical and logical arrangement of nodes on a network. The common network topologies include bus, star, ring, mesh, and tree. Service Provider Networks: These types of Networks give permission to take Network Capacity and Functionality on lease from the Provider. Service Provider Networks include Wireless Communications, Data Carriers, etc.",
+          "start_idx": 8,
+          "sentence_count": 4
+        }
+      },
+      {
+        "matching_text": "Nov 22, 2020 ... It refers to the placement of the various network devices such as the routers, switches, wireless access points, computers, etc. including the ...",
+        "source": "https://www.itjones.com/blogs/2020/11/22/a-guide-to-network-topology",
+        "similarity": 0.3327239488117002,
+        "chunk_info": {
+          "text": "Topology: Network topology refers to the physical and logical arrangement of nodes on a network. The common network topologies include bus, star, ring, mesh, and tree. Service Provider Networks: These types of Networks give permission to take Network Capacity and Functionality on lease from the Provider. Service Provider Networks include Wireless Communications, Data Carriers, etc.",
+          "start_idx": 8,
+          "sentence_count": 4
+        }
+      },
+      {
+        "matching_text": "Mar 21, 2025 ... Examine what a network topology is and how physical and logical network topologies compare. Learn how to diagram the different types of ...",
+        "source": "https://www.techtarget.com/searchnetworking/definition/network-topology",
+        "similarity": 0.3333333333333333,
+        "chunk_info": {
+          "text": "Topology: Network topology refers to the physical and logical arrangement of nodes on a network. The common network topologies include bus, star, ring, mesh, and tree. Service Provider Networks: These types of Networks give permission to take Network Capacity and Functionality on lease from the Provider. Service Provider Networks include Wireless Communications, Data Carriers, etc.",
+          "start_idx": 8,
+          "sentence_count": 4
+        }
+      },
+      {
+        "matching_text": "Jun 10, 2025 ... Below is a list of the six different types of physical network topologies: Star Topology. Bus Topology. Ring Topology. Mesh Topology. Tree ...",
+        "source": "https://www.zenarmor.com/docs/network-basics/what-is-network-topology",
+        "similarity": 0.23204419889502761,
+        "chunk_info": {
+          "text": "Topology: Network topology refers to the physical and logical arrangement of nodes on a network. The common network topologies include bus, star, ring, mesh, and tree. Service Provider Networks: These types of Networks give permission to take Network Capacity and Functionality on lease from the Provider. Service Provider Networks include Wireless Communications, Data Carriers, etc.",
+          "start_idx": 8,
+          "sentence_count": 4
+        }
+      }
+    ],
+    "success": true
+  },
+  "f63885f1a203c5492f96e5dae3d87703": {
+    "matches": [
+      {
+        "matching_text": "s can include computers, servers, printers, and other hardware. Networks allow for the efficient exchange of data, enabling various applications such as email, file sharing, and internet browsing. Basic Terminologies of Computer Networks Network: A network is a collection of computers and devices that are connected together to enable communication and data exchange. Nodes: Nodes are devices that are connected to a network. These can include computers, Servers, Printers, Routers, Switches , and other devices. Protocol: A protocol is a set of rules and standards that govern how data is transmitted over a network. Examples of protocols include TCP/IP, HTTP , and FTP . Topology: Network topology refers to the physical and logical arrangement of nodes on a network. The common network topologies",
+        "source": "https://www.geeksforgeeks.org/computer-networks/basics-computer-networking/",
+        "similarity": 0.8016276703967447,
+        "chunk_info": {
+          "text": "A computer network is a collection of interconnected devices that share resources and information. These devices can include computers, servers, printers, and other hardware. Networks allow for the efficient exchange of data, enabling various applications such as email, file sharing, and internet browsing. Basic Terminologies of Computer Networks Network: A network is a collection of computers and devices that are connected together to enable communication and data exchange. Nodes: Nodes are devices that are connected to a network. These can include computers, Servers, Printers, Routers, Switches, and other devices. Protocol: A protocol is a set of rules and standards that govern how data is transmitted over a network. Examples of protocols include TCP/IP, HTTP, and FTP. Topology: Network topology refers to the physical and logical arrangement of nodes on a network. The common network topologies include bus, star, ring, mesh, and tree. Service Provider Networks: These types of Networks give permission to take Network Capacity and Functionality on lease from the Provider. Service Provider Networks include Wireless Communications, Data Carriers, etc.",
+          "start_idx": 0,
+          "sentence_count": 12
+        }
+      }
+    ],
+    "success": true
+  }
+}
