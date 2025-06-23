@@ -10,3 +10,4 @@ Pillow                # for image processing
 reportlab             # for PDF report generation
 matplotlib            # for generating pie/bar charts
 qrcode                # for optional report QR codes
+gunicorn
