@@ -1,4 +1,7 @@
 import nltk
+from nltk.tokenize import sent_tokenize
+
+# ✅ Ensure 'punkt' is available (especially for servers like Render)
 try:
     nltk.data.find('tokenizers/punkt')
 except LookupError:
@@ -8,7 +11,6 @@ import requests
 from bs4 import BeautifulSoup
 from urllib.parse import urlparse
 from difflib import SequenceMatcher
-import nltk
 import json
 import logging
 import threading
@@ -17,6 +19,8 @@ import fitz  # PyMuPDF
 import tempfile
 import os
 from concurrent.futures import ThreadPoolExecutor, as_completed
+
+# --- CONFIG ---
 CSE_KEYS = [
     {"key": "AIzaSyBO_jbs_g06nD2n_F9DdMMm-QAJI6aNx-E", "cx": "109c4ebd7caca45ee"},
     {"key": "AIzaSyC1LUeswH338fvtxKAmms3Hm9HRBf88lko", "cx": "00e7ff844adbe438d"},
@@ -32,7 +36,7 @@ CSE_KEYS = [
     {"key": "AIzaSyDbfHW0ykwFNDGjMcRRYtoN2dnaV9mQsB8", "cx": "8699048b3e9144756"},
     {"key": "AIzaSyCFqWVuPkIut9laT8VbXrJOXy6seYu442o", "cx": "8699048b3e9144756"},
 ]
-# --- CONFIG ---
+
 HEADERS = {'User-Agent': 'Mozilla/5.0'}
 SEARCH_CACHE_FILE = "search_cache.json"
 BLACKLISTED_DOMAINS = {"landacbio.ipn.mx", "example.com"}
@@ -41,11 +45,10 @@ SEARCH_CACHE = {}
 MAX_WORKERS = 10
 SIMILARITY_THRESHOLD = 0.35
 
-
 logger = logging.getLogger(__name__)
 lock = threading.Lock()
 
-# --- Load Cached Results ---
+# --- Load Cache if available ---
 if os.path.exists(SEARCH_CACHE_FILE):
     try:
         with open(SEARCH_CACHE_FILE, 'r', encoding='utf-8') as f:
@@ -53,33 +56,40 @@ if os.path.exists(SEARCH_CACHE_FILE):
     except:
         SEARCH_CACHE = {}
 
-# --- Chunk Text ---
-def chunk_sentences(text, size=20):
-    sentences = nltk.sent_tokenize(text)
-    for i in range(0, len(sentences), size):
-        yield " ".join(sentences[i:i + size])
-
+# --- Utilities ---
 def hash_text(text):
     return hashlib.sha256(text.encode()).hexdigest()
 
-# --- Google Search ---
+def similarity(a, b):
+    try:
+        return SequenceMatcher(None, a.lower(), b.lower()).ratio()
+    except:
+        return 0
+
+# --- Sentence chunking ---
+def chunk_sentences(text, size=20):
+    sentences = sent_tokenize(text)
+    for i in range(0, len(sentences), size):
+        yield " ".join(sentences[i:i + size])
+
+# --- Google CSE Search ---
 def get_search_results(query, key, cx):
     try:
         url = f"https://www.googleapis.com/customsearch/v1?q={requests.utils.quote(query)}&key={key}&cx={cx}"
-        res = requests.get(url, headers=HEADERS, timeout=5)
+        res = requests.get(url, headers=HEADERS, timeout=6)
         if res.status_code == 200:
             return res.json().get("items", [])
     except Exception as e:
         logger.warning(f"[Google Error] {e}")
     return []
 
-# --- Fetch Text from URL ---
+# --- Fetch Webpage Text ---
 def fetch_full_text(url):
     try:
         domain = urlparse(url).netloc
         if domain in BLACKLISTED_DOMAINS or domain in FAILED_DOMAINS:
             return None
-        res = requests.get(url, headers=HEADERS, timeout=5)
+        res = requests.get(url, headers=HEADERS, timeout=6)
         if res.status_code == 200 and "text/html" in res.headers.get("Content-Type", ""):
             soup = BeautifulSoup(res.text, "html.parser")
             return soup.get_text(separator=" ", strip=True)
@@ -87,7 +97,7 @@ def fetch_full_text(url):
         FAILED_DOMAINS.add(domain)
     return None
 
-# --- Extract Text from PDF URL ---
+# --- PDF Download & Extract ---
 def fetch_pdf_text(url):
     try:
         r = requests.get(url, timeout=6, stream=True)
@@ -105,14 +115,7 @@ def fetch_pdf_text(url):
         pass
     return None
 
-# --- Similarity ---
-def similarity(a, b):
-    try:
-        return SequenceMatcher(None, a.lower(), b.lower()).ratio()
-    except:
-        return 0
-
-# --- Core Matching Function ---
+# --- Process a Chunk ---
 def process_chunk(chunk_text):
     chunk_id = hash_text(chunk_text)
     if chunk_id in SEARCH_CACHE:
@@ -130,7 +133,6 @@ def process_chunk(chunk_text):
             if not url or urlparse(url).netloc in BLACKLISTED_DOMAINS:
                 continue
 
-            # Fetch content (PDF or Web)
             full_text = None
             if url.lower().endswith(".pdf"):
                 full_text = fetch_pdf_text(url)
@@ -150,7 +152,7 @@ def process_chunk(chunk_text):
 
     return best_result
 
-# --- Public Function for Flask ---
+# --- Main Plagiarism Detection Function ---
 def check_plagiarism_online(input_text):
     chunks = list(chunk_sentences(input_text))
     all_results = []
@@ -165,17 +167,20 @@ def check_plagiarism_online(input_text):
             except Exception as e:
                 logger.warning(f"[Chunk Error] {e}")
 
-    # Post-process
     sources = {}
     for r in all_results:
         url = r["source"]
-        sources.setdefault(url, []).append(r["score"])
+        if url not in sources or r["score"] > sources[url]["score"]:
+            sources[url] = {
+                "score": r["score"],
+                "matching_text": r["matching_text"]
+            }
 
     top_sources = [{
         "source": url,
-        "score": round(max(scores), 2),
-        "matching_text": f"...match from {url}..."
-    } for url, scores in sources.items()]
+        "score": round(data["score"], 2),
+        "matching_text": data["matching_text"]
+    } for url, data in sources.items()]
 
     matched_chunks = sum([1 for r in all_results if r["score"] > 40])
     copied_percent = min(100, round((matched_chunks / len(chunks)) * 100, 2))
