@@ -60,11 +60,16 @@ def similarity(a, b):
         return 0
 
 # --- Sentence chunking ---
+from nltk.tokenize.punkt import PunktSentenceTokenizer
+import nltk
+nltk.download('punkt', quiet=True)
 tokenizer = PunktSentenceTokenizer()
+
 def chunk_sentences(text, size=20):
     sentences = tokenizer.tokenize(text)
     for i in range(0, len(sentences), size):
         yield " ".join(sentences[i:i + size])
+
 
 # --- Google CSE Search ---
 def get_search_results(query, key, cx):
