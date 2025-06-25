@@ -1,11 +1,4 @@
-import nltk
-from nltk.tokenize import sent_tokenize
 
-# ✅ Ensure 'punkt' is available (especially for servers like Render)
-try:
-    nltk.data.find('tokenizers/punkt')
-except LookupError:
-    nltk.download('punkt')
 
 import requests
 from bs4 import BeautifulSoup
@@ -67,8 +60,9 @@ def similarity(a, b):
         return 0
 
 # --- Sentence chunking ---
+tokenizer = PunktSentenceTokenizer()
 def chunk_sentences(text, size=20):
-    sentences = sent_tokenize(text)
+    sentences = tokenizer.tokenize(text)
     for i in range(0, len(sentences), size):
         yield " ".join(sentences[i:i + size])
 
