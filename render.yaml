@@ -4,6 +4,10 @@ services:
     env: python
     buildCommand: ""
     startCommand: gunicorn app:app --timeout 180
+    build:
+      commands:
+      - pip install -r requirements.txt
+      - python -m nltk.downloader punkt
     envVars:
       - key: FLASK_ENV
         value: production
