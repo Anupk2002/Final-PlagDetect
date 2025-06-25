@@ -1,26 +1,22 @@
-
-import re
-import time
-import requests
 import nltk
-from nltk.tokenize.punkt import PunktSentenceTokenizer
-from nltk.corpus import stopwords
-from datetime import datetime
+try:
+    nltk.data.find('tokenizers/punkt')
+except LookupError:
+    nltk.download('punkt')
+
+import requests
 from bs4 import BeautifulSoup
-from concurrent.futures import ThreadPoolExecutor, as_completed
+from urllib.parse import urlparse
 from difflib import SequenceMatcher
+import nltk
+import json
+import logging
 import threading
 import hashlib
-import json
+import fitz  # PyMuPDF
 import tempfile
 import os
-import fitz  
-
-from collections import defaultdict
-
-nltk.download('punkt', quiet=True)
-nltk.download('stopwords', quiet=True)
-
+from concurrent.futures import ThreadPoolExecutor, as_completed
 CSE_KEYS = [
     {"key": "AIzaSyBO_jbs_g06nD2n_F9DdMMm-QAJI6aNx-E", "cx": "109c4ebd7caca45ee"},
     {"key": "AIzaSyC1LUeswH338fvtxKAmms3Hm9HRBf88lko", "cx": "00e7ff844adbe438d"},
@@ -28,251 +24,171 @@ CSE_KEYS = [
     {"key": "AIzaSyCqZ5G5RlV0Nd6279EXbrvSUcEPE5qzxac", "cx": "a2e7ce19669df4d61"},
     {"key": "AIzaSyDxs-vZTjOeHmrQ0DiQJ7H9nbNkFlT6Twc", "cx": "0410614e20c86471d"},
     {"key": "AIzaSyCT1Sb0gOUrrRvM6m0awISUPbhwh-Neevg", "cx": "33597f7e6e8a8494e"},
+    {"key": "AIzaSyCamZu50ooZSCWRxkrluVt-AzF7EgG2dVo", "cx": "556ca979a05d1495d"},
+    {"key": "AIzaSyD3vojhS4F5g6dc7C5VExDyQlZkQSiFFuE", "cx": "a651dad0007ac4fc8"},
+    {"key": "AIzaSyDHCkEqsSphUvsQsCYnmTjh4UuZPnaWu8o", "cx": "96a02bad5521b4104"},
+    {"key": "AIzaSyBa7E4etKHWbDB0KZdlHeh7YaN_W5lH_jc", "cx": "e7f273958448348fc"},
+    {"key": "AIzaSyDoVi9PvyQhEYjgD9FVGOy57_LW-4gPzaY", "cx": "673795c32609e4065"},
+    {"key": "AIzaSyDbfHW0ykwFNDGjMcRRYtoN2dnaV9mQsB8", "cx": "8699048b3e9144756"},
+    {"key": "AIzaSyCFqWVuPkIut9laT8VbXrJOXy6seYu442o", "cx": "8699048b3e9144756"},
 ]
+# --- CONFIG ---
+HEADERS = {'User-Agent': 'Mozilla/5.0'}
+SEARCH_CACHE_FILE = "search_cache.json"
+BLACKLISTED_DOMAINS = {"landacbio.ipn.mx", "example.com"}
+FAILED_DOMAINS = set()
+SEARCH_CACHE = {}
+MAX_WORKERS = 10
+SIMILARITY_THRESHOLD = 0.35
 
-LOG_FILE = 'plagiarism_log.txt'
-CACHE_FILE = 'search_cache.json'
 
-class KeyRotator:
-    def __init__(self, keys):
-        self.keys = keys
-        self.index = 0
-        self.lock = threading.Lock()
+logger = logging.getLogger(__name__)
+lock = threading.Lock()
 
-    def get_next_key(self):
-        with self.lock:
-            key = self.keys[self.index]
-            self.index = (self.index + 1) % len(self.keys)
-            return key
-
-key_rotator = KeyRotator(CSE_KEYS)
-
-def log_event(message):
+# --- Load Cached Results ---
+if os.path.exists(SEARCH_CACHE_FILE):
     try:
-        with threading.Lock():
-            with open(LOG_FILE, 'a', encoding='utf-8') as f:
-                f.write(f"[{datetime.now()}] {message}\n")
-                f.flush()  # Ensure immediate write
-    except Exception as e:
-        print(f"[Logging Failed] {e}")
-
-def clean_text(text):
-    return re.sub(r'\s+', ' ', text or '').strip()
-
-def get_cache_key(text):
-    return hashlib.md5(text.encode('utf-8')).hexdigest()
-
-def load_cache():
-    try:
-        with open(CACHE_FILE, 'r', encoding='utf-8') as f:
-            return json.load(f)
+        with open(SEARCH_CACHE_FILE, 'r', encoding='utf-8') as f:
+            SEARCH_CACHE = json.load(f)
     except:
-        return {}
+        SEARCH_CACHE = {}
 
-def save_cache(cache):
+# --- Chunk Text ---
+def chunk_sentences(text, size=20):
+    sentences = nltk.sent_tokenize(text)
+    for i in range(0, len(sentences), size):
+        yield " ".join(sentences[i:i + size])
+
+def hash_text(text):
+    return hashlib.sha256(text.encode()).hexdigest()
+
+# --- Google Search ---
+def get_search_results(query, key, cx):
     try:
-        with open(CACHE_FILE, 'w', encoding='utf-8') as f:
-            json.dump(cache, f, ensure_ascii=False, indent=2)
+        url = f"https://www.googleapis.com/customsearch/v1?q={requests.utils.quote(query)}&key={key}&cx={cx}"
+        res = requests.get(url, headers=HEADERS, timeout=5)
+        if res.status_code == 200:
+            return res.json().get("items", [])
+    except Exception as e:
+        logger.warning(f"[Google Error] {e}")
+    return []
+
+# --- Fetch Text from URL ---
+def fetch_full_text(url):
+    try:
+        domain = urlparse(url).netloc
+        if domain in BLACKLISTED_DOMAINS or domain in FAILED_DOMAINS:
+            return None
+        res = requests.get(url, headers=HEADERS, timeout=5)
+        if res.status_code == 200 and "text/html" in res.headers.get("Content-Type", ""):
+            soup = BeautifulSoup(res.text, "html.parser")
+            return soup.get_text(separator=" ", strip=True)
+    except:
+        FAILED_DOMAINS.add(domain)
+    return None
+
+# --- Extract Text from PDF URL ---
+def fetch_pdf_text(url):
+    try:
+        r = requests.get(url, timeout=6, stream=True)
+        if r.status_code == 200 and 'application/pdf' in r.headers.get('Content-Type', ''):
+            with tempfile.NamedTemporaryFile(delete=False, suffix=".pdf") as f:
+                for chunk in r.iter_content(1024):
+                    f.write(chunk)
+                f.flush()
+                doc = fitz.open(f.name)
+                text = " ".join(page.get_text() for page in doc)
+                doc.close()
+                os.unlink(f.name)
+                return text
     except:
         pass
+    return None
 
-def calculate_similarity(text1, text2):
-    if not text1 or not text2:
-        return 0.0
-    return SequenceMatcher(None, text1.lower(), text2.lower()).ratio()
-
-def create_smart_chunks(text, chunk_size=14, overlap=6):
-    tokenizer = PunktSentenceTokenizer()
-    sentences = tokenizer.tokenize(text)
-    chunks = []
-    for i in range(0, len(sentences), chunk_size - overlap):
-        chunk_sentences = sentences[i:i + chunk_size]
-        chunk = ' '.join(chunk_sentences).strip()
-        if len(chunk) > 50:
-            chunks.append({
-                'text': chunk,
-                'start_idx': i,
-                'sentence_count': len(chunk_sentences)
-            })
-    return chunks
-
-def fetch_full_text_from_url(url):
+# --- Similarity ---
+def similarity(a, b):
     try:
-        headers = {'User-Agent': 'Mozilla/5.0'}
-        r = requests.get(url, headers=headers, timeout=10)
-        soup = BeautifulSoup(r.text, 'html.parser')
-        for tag in soup(['script', 'style', 'nav', 'footer', 'header', 'aside']):
-            tag.decompose()
-        return clean_text(soup.get_text(separator=' '))[:30000]
-    except Exception as e:
-        log_event(f"[Fetch Error] {url}: {e}")
-        return None
+        return SequenceMatcher(None, a.lower(), b.lower()).ratio()
+    except:
+        return 0
 
-def extract_text_from_pdf_url(url):
-    try:
-        response = requests.get(url, timeout=10)
-        if response.status_code != 200:
-            return None
-        with tempfile.NamedTemporaryFile(delete=False, suffix=".pdf") as tmp:
-            tmp.write(response.content)
-            temp_path = tmp.name
-        doc = fitz.open(temp_path)
-        text = " ".join(page.get_text() for page in doc)
-        doc.close()
-        os.remove(temp_path)
-        return clean_text(text)
-    except Exception as e:
-        log_event(f"[PDF Extract Error] {url}: {e}")
-        return None
+# --- Core Matching Function ---
+def process_chunk(chunk_text):
+    chunk_id = hash_text(chunk_text)
+    if chunk_id in SEARCH_CACHE:
+        return SEARCH_CACHE[chunk_id]
 
-def search_chunk_parallel(chunk_info, cache):
-    chunk_text = chunk_info['text']
-    cache_key = get_cache_key(chunk_text)
-    if cache_key in cache:
-        return cache[cache_key]
+    best_result = []
+    for key_info in CSE_KEYS:
+        results = get_search_results(chunk_text, key_info["key"], key_info["cx"])
+        if not results:
+            continue
 
-    SEARCH_URL = 'https://www.googleapis.com/customsearch/v1'
-    log_event(f"[Chunk Start] Processing chunk {chunk_info['start_idx']}")
-
-    for attempt in range(len(CSE_KEYS)):
-        try:
-            key_info = key_rotator.get_next_key()
-            query = chunk_text[:256]
-            params = {
-                'key': key_info['key'],
-                'cx': key_info['cx'],
-                'q': query,
-                'num': 5,
-            }
-
-            log_event(f"[Query] Chunk {chunk_info['start_idx']} → {params['q']}")
-            response = requests.get(SEARCH_URL, params=params, timeout=12)
-            if response.status_code != 200:
-                raise Exception(f"HTTP {response.status_code}")
-            data = response.json()
-            if 'items' not in data or not data['items']:
-                log_event(f"[No Results] Chunk {chunk_info['start_idx']} returned no items")
+        for item in results[:3]:
+            url = item.get("link")
+            snippet = item.get("snippet", "")
+            if not url or urlparse(url).netloc in BLACKLISTED_DOMAINS:
                 continue
 
-            matches = []
-            for item in data['items']:
-                snippet = clean_text(item.get('snippet', ''))
-                source = item.get('link', '').strip()
-                if not snippet or not source:
-                    continue
+            # Fetch content (PDF or Web)
+            full_text = None
+            if url.lower().endswith(".pdf"):
+                full_text = fetch_pdf_text(url)
+            else:
+                full_text = fetch_full_text(url)
 
-                similarity_snippet = calculate_similarity(chunk_text, snippet)
-                best_text = snippet
-                best_similarity = similarity_snippet
+            match_score = similarity(chunk_text, full_text or snippet)
+            if match_score >= SIMILARITY_THRESHOLD:
+                best_result.append({
+                    "source": url,
+                    "score": round(match_score * 100, 2),
+                    "matching_text": full_text[:500] if full_text else snippet
+                })
 
-                full_text = extract_text_from_pdf_url(source) if source.endswith('.pdf') else fetch_full_text_from_url(source)
+    with lock:
+        SEARCH_CACHE[chunk_id] = best_result
 
-                if full_text:
-                    excerpt_len = min(len(chunk_text) * 2, 800)
-                    for i in range(0, len(full_text) - excerpt_len, 150):
-                        excerpt = full_text[i:i + excerpt_len]
-                        score = calculate_similarity(chunk_text, excerpt)
-                        if score > best_similarity:
-                            best_similarity = score
-                            best_text = excerpt
+    return best_result
 
-                if best_similarity > 0.2:
-                    matches.append({
-                        'matching_text': best_text,
-                        'source': source,
-                        'similarity': best_similarity,
-                        'chunk_info': chunk_info
-                    })
-                    log_event(f"[Match] {source} | Similarity: {round(best_similarity*100, 2)}%")
-                    log_event(f"[Snippet] {best_text[:150]}...")
-
-            result = {'matches': matches, 'success': True}
-            cache[cache_key] = result
-            return result
-
-        except Exception as e:
-            log_event(f"[Retry {attempt+1}] Chunk {chunk_info['start_idx']} error: {e}")
-            time.sleep(1.5)
-
-    result = {'matches': [], 'success': False}
-    cache[cache_key] = result
-    return result
-
+# --- Public Function for Flask ---
 def check_plagiarism_online(input_text):
-    try:
-        log_event("🚀 Running advanced plagiarism check")
-        return check_with_google_cse(input_text)
-    except Exception as e:
-        log_event(f"❌ Error: {e}")
-        return {
-            'copied': False,
-            'sources': [],
-            'percentage_copied': 0.0,
-            'used_api': 'none',
-            'error': str(e)
-        }
+    chunks = list(chunk_sentences(input_text))
+    all_results = []
 
-def check_with_google_cse(input_text):
-    input_text = clean_text(input_text)
-    if not input_text or len(input_text) < 30:
-        return {'copied': False, 'sources': [], 'percentage_copied': 0.0}
-
-    cache = load_cache()
-    chunks = create_smart_chunks(input_text)
-    if not chunks:
-        return {'copied': False, 'sources': [], 'percentage_copied': 0.0}
-
-    all_matches = []
-    with ThreadPoolExecutor(max_workers=2) as executor:
-        futures = {executor.submit(search_chunk_parallel, chunk, cache): chunk for chunk in chunks}
-        for future in as_completed(futures):
+    with ThreadPoolExecutor(max_workers=MAX_WORKERS) as executor:
+        future_map = {executor.submit(process_chunk, chunk): chunk for chunk in chunks}
+        for future in as_completed(future_map):
             try:
-                result = future.result()
-                if result['success']:
-                    all_matches.extend(result['matches'])
-                time.sleep(1)
+                chunk_results = future.result()
+                if chunk_results:
+                    all_results.extend(chunk_results)
             except Exception as e:
-                log_event(f"[Chunk Thread Error] {e}")
+                logger.warning(f"[Chunk Error] {e}")
 
-    save_cache(cache)
+    # Post-process
+    sources = {}
+    for r in all_results:
+        url = r["source"]
+        sources.setdefault(url, []).append(r["score"])
 
-    source_to_matches = defaultdict(list)
-    seen_texts = set()
-    total_input_words = len(input_text.split())
-    total_matched_words = 0
-    unique_matches = []
+    top_sources = [{
+        "source": url,
+        "score": round(max(scores), 2),
+        "matching_text": f"...match from {url}..."
+    } for url, scores in sources.items()]
 
-    for match in all_matches:
-        source = match['source']
-        matched_text = match['matching_text']
-        key = f"{source}:{matched_text[:80]}"
-        if key in seen_texts:
-            continue
-        seen_texts.add(key)
+    matched_chunks = sum([1 for r in all_results if r["score"] > 40])
+    copied_percent = min(100, round((matched_chunks / len(chunks)) * 100, 2))
 
-        contribution = len(matched_text.split()) * match['similarity']
-        source_to_matches[source].append((matched_text, match['similarity']))
-        total_matched_words += contribution
-
-    for source, matches in source_to_matches.items():
-        source_words = sum(len(m[0].split()) * m[1] for m in matches)
-        percent = round((source_words / total_input_words) * 100, 2)
-        for matched_text, similarity in matches:
-            unique_matches.append({
-                'source': source,
-                'matching_text': matched_text,
-                'similarity': similarity,
-                'score': percent
-            })
-
-    percentage_copied = min(round((total_matched_words / total_input_words) * 100, 2), 100.0)
-    copied = percentage_copied > 15.0
-
-    log_event(f"✅ Final plagiarism: {percentage_copied}% from {len(source_to_matches)} source(s)")
+    try:
+        with open(SEARCH_CACHE_FILE, 'w', encoding='utf-8') as f:
+            json.dump(SEARCH_CACHE, f, indent=2)
+    except:
+        logger.error("Failed to save cache")
 
     return {
-        'copied': copied,
-        'sources': unique_matches,
-        'percentage_copied': percentage_copied,
-        'used_api': 'crawler'
+        "percentage_copied": copied_percent,
+        "sources": top_sources,
+        "combined_snippets": all_results,
+        "used_api": f"{len(chunks)} chunks, {len(CSE_KEYS)} keys"
     }
